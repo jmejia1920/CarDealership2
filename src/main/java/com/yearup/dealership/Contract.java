@@ -1,20 +1,17 @@
-package com.learntocode;
+package com.yearup.dealership;
 
 public class Contract {
     private String dateOfContract;
     private String customerName;
     private String email;
     private boolean vehicleSold;
-    private double totalPrice;
-    private int monthlyPayment;
 
-    public Contract(String dateOfContract, String customerName, String email, boolean vehicleSold, double totalPrice, int monthlyPayment) {
+
+    public Contract(String dateOfContract, String customerName, String email, boolean vehicleSold) {
         this.dateOfContract = dateOfContract;
         this.customerName = customerName;
         this.email = email;
         this.vehicleSold = false;
-        this.totalPrice = totalPrice;
-        this.monthlyPayment = monthlyPayment;
     }
 
     public String getDateOfContract() {
@@ -50,18 +47,10 @@ public class Contract {
     }
 
     public double getTotalPrice() {
-        return totalPrice;
+        return getTotalPrice();
     }
 
-    public void setTotalPrice(double totalPrice) {
-        this.totalPrice = totalPrice;
-    }
-
-    public int getMonthlyPayment() {
-        return monthlyPayment;
-    }
-
-    public void setMonthlyPayment(int monthlyPayment) {
-        this.monthlyPayment = monthlyPayment;
+    public double getMonthlyPayment(){
+        return getMonthlyPayment();
     }
 }

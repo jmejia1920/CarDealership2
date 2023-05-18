@@ -1,4 +1,4 @@
-package com.learntocode;
+package com.yearup.dealership;
 
 import java.util.List;
 import java.util.Scanner;
